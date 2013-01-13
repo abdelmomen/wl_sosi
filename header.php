@@ -1,18 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html <?php language_attributes();?> >
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Aquatic Theme - Free CSS Template</title>
-<meta name="keywords" content="aquatic theme, aqua color, aquamarine, free template" />
-<meta name="description" content="Aquatic Theme is a free CSS template provided by templatemo.com" />
-<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+	<meta charset="<?php bloginfo('charset');?>">
+	
+	<title><?php wp_title('|',true,'right');?><?php bloginfo('name');?> </title>
+	
+	<meta name="description" content="<?php bloginfo('description');?>">
+	
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" />
 
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<link rel="stylesheet" type="text/css" href="<?php print WL_THEME_ROOT ;?>/css/ddsmoothmenu.css" />
 
-<link rel="stylesheet" type="text/css" href="rtl.css" />
+<link rel="stylesheet" type="text/css" href="<?php print WL_THEME_ROOT ;?>/rtl.css" />
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
+<script type="text/javascript" src="<?php print WL_THEME_ROOT ;?>/js/jquery.min.js"></script>
+<script type="text/javascript" src="<?php print WL_THEME_ROOT ;?>/js/ddsmoothmenu.js">
 
 /***********************************************
 * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -41,11 +43,12 @@ ddsmoothmenu.init({
 
 	<div id="templatemo_header">
     
-        <div id="site_title"><h1><a href="http://www.templatemo.com">Free CSS Templates</a></h1></div>
+        <div id="site_title"><h1><a href="<?php echo home_url();?>"><?php bloginfo('name');?></a></h1></div>
         
         <div id="templatemo_menu" class="ddsmoothmenu">
-            <ul>
-                <li><a href="index.html" class="selected">الرئيسية</a></li>
+           <!--  <ul>
+            
+                <li><a href="<?php echo home_url();?>" class="selected">الرئيسية</a></li>
                 <li><a href="about.html">من نحن</a>
                     <ul>
                     	<li><a href="http://www.templatemo.com/page/1">محتوي عربي 1</a></li>
@@ -70,7 +73,13 @@ ddsmoothmenu.init({
                     </ul>
                 </li>
                 <li><a href="contact.html">اتصل بنا</a></li>
+                 
             </ul>
+            -->
+					<?php 
+					// imortant empty container for the ddsmoothmenu sake 
+					wp_nav_menu( array('menu' => 'Top Menu','container'=>'' )); ?>
+
             <br style="clear: left" />
         </div> <!-- end of templatemo_menu -->
         <div class="cleaner"></div>
@@ -78,11 +87,11 @@ ddsmoothmenu.init({
     
     <div id="templatemo_middle">
     	<div id="mid_slider">
-			<h3 class="verticalar">Slider Goes Here</h3>
+			<h3 class="verticalar"> TODO : Slider Goes Here</h3>
         </div>
         <div id="mid_left">
             <div id="mid_title">
-                محتوي عرعربي محتو عنوان
+               ADD PAGE HERE
             </div>
             <p>محتوي عربي محتوي عربي محتوي عربي محتوي عربي  محتوي عربي محتوي عربي محتوي عربي محتوي عربي محتوي عربي محتوي عربي محتويمحتوي عربي .</p>
             <div id="learn_more"><a href="#">اعرف اكثر</a></div>

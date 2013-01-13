@@ -1,0 +1,41 @@
+/*
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption,
+th,
+td {
+	text-align: right;
+}
+
+#site_title { 
+	float: right; 
+}
+
+.ddsmoothmenu {
+	float: left; 
+}
+.ddsmoothmenu ul li {
+float: right;
+}
+
+#mid_left { 
+	float:right; 
+}
+
+#mid_slider { 
+	float: left; 
+}
+
+.col_w900_last {border-right: 4px solid #ccc;border-left: none;}
+
+
+.icon {
+	right: -40px;
+}
+
+
