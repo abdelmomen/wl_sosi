@@ -13,6 +13,8 @@
 
 <link rel="stylesheet" type="text/css" href="<?php print WL_THEME_ROOT ;?>/rtl.css" />
 
+<link rel="shortcut icon" href="<?php print WL_THEME_ROOT ;?>/images/favicon.ico">
+
 <script type="text/javascript" src="<?php print WL_THEME_ROOT ;?>/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php print WL_THEME_ROOT ;?>/js/ddsmoothmenu.js">
 
@@ -46,36 +48,7 @@ ddsmoothmenu.init({
         <div id="site_title"><h1><a href="<?php echo home_url();?>"><?php bloginfo('name');?></a></h1></div>
         
         <div id="templatemo_menu" class="ddsmoothmenu">
-           <!--  <ul>
-            
-                <li><a href="<?php echo home_url();?>" class="selected">الرئيسية</a></li>
-                <li><a href="about.html">من نحن</a>
-                    <ul>
-                    	<li><a href="http://www.templatemo.com/page/1">محتوي عربي 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">محتوي عربي 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">محتوي عربي 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="portfolio.html">اعمالنا</a>
-                    <ul>
-                    	<li><a href="http://www.templatemo.com/page/1">محتوي عربي 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">محتوي عربي 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">محتوي عربي 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="services.html">خدمات</a>
-                    <ul>
-                    	<li><a href="http://www.templatemo.com/page/1">Sub menu 1</a></li>
-                        <li><a href="http://www.templatemo.com/page/2">Sub menu 2</a></li>
-                        <li><a href="http://www.templatemo.com/page/3">Sub menu 3</a></li>
-                        <li><a href="http://www.templatemo.com/page/4">Sub menu 4</a></li>
-                        <li><a href="http://www.templatemo.com/page/5">Sub menu 5</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-                 
-            </ul>
-            -->
+
 					<?php 
 					// imortant empty container for the ddsmoothmenu sake 
 					wp_nav_menu( array('menu' => 'Top Menu','container'=>'' )); ?>
@@ -85,16 +58,3 @@ ddsmoothmenu.init({
         <div class="cleaner"></div>
     </div> <!-- end of templatemo header -->
     
-    <div id="templatemo_middle">
-    	<div id="mid_slider">
-			<h3 class="verticalar"> TODO : Slider Goes Here</h3>
-        </div>
-        <div id="mid_left">
-            <div id="mid_title">
-               ADD PAGE HERE
-            </div>
-            <p>محتوي عربي محتوي عربي محتوي عربي محتوي عربي  محتوي عربي محتوي عربي محتوي عربي محتوي عربي محتوي عربي محتوي عربي محتويمحتوي عربي .</p>
-            <div id="learn_more"><a href="#">اعرف اكثر</a></div>
-	  	</div>
-        <div class="cleaner"></div>
-	</div> <!-- end of middle -->

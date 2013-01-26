@@ -1,6 +1,7 @@
 /*
 
 */
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
 body {
 	direction: rtl;
@@ -10,6 +11,9 @@ caption,
 th,
 td {
 	text-align: right;
+}
+h3 , h4 {
+	font-family: 'Droid Arabic Kufi', serif;
 }
 
 #site_title { 
@@ -31,11 +35,34 @@ float: right;
 	float: left; 
 }
 
-.col_w900_last {border-right: 4px solid #ccc;border-left: none;}
-
 
 .icon {
 	right: -40px;
 }
 
+.fp_service_box img {
+	float: right;
+	margin-left: 25px;
+}
+.col_allw280 { float: right; }
+.ddsmoothmenu ul li ul li a{
+
+	text-align: right;
+}
+.col_w900_comments { 
+	border-right: 4px solid #ccc;
+	border-left: none;
+}
+	
+.col_w900_comments figure{ 
+	float:right;
+	right: -60px;
+	margin-left: -45px;
+}
+
+.comment-body{ 
+	float:right;
+	padding: 15px 0;
+	max-width: 550px;
+}
 
