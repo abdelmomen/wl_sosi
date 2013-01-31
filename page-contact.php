@@ -44,15 +44,14 @@
 		if(!$error_name && !$error_email && !$error_message){
 			
 			// Get the receiver email from theme options
-			$receiver_email='test@test.com';
+			$receiver_email='abdelmomen1985@gmail.com';
 			//TODO traslate the email context
 			$subject = " by $name";
 			$body = " message is : $message".PHP_EOL." \n from email : $email";
 			$body.=(!empty($website))?PHP_EOL.' with website '.$website:'';
-			//die($body);
+
 			// Send the email
-			//wp_mail($receiver_email,$subject,$body);
-			if(0)
+			if(wp_mail($receiver_email,$subject,$body))
 				$email_sent=true;
 			else
 				$email_sent_error=true;

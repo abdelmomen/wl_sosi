@@ -2,7 +2,7 @@
 
     <div id="templatemo_middle">
     	<div id="mid_slider">
-			<h3 class="verticalar"> TODO : Slider Goes Here</h3>
+			<?php echo wl_slider();?>
         </div>
         <div id="mid_left">
             <?php
@@ -27,7 +27,7 @@
             <h3> Here you will get the excerpt <br/> of the page with slug name : {<?php echo $intro_page_name;?>}</h3>
             <?php endif;?>
 	  	</div>
-        <div class="cleaner"></div>
+        <div class="cleaner vrt-sep"></div>
 	</div> <!-- end of middle -->
 	
     <div id="templatemo_main">
